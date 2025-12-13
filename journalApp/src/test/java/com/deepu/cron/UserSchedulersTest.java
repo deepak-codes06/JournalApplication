@@ -1,4 +1,4 @@
-package com.deepu.Schedulers;
+package com.deepu.cron;
 
 import com.deepu.scheduler.UserScheduler;
 import org.junit.jupiter.api.Test;

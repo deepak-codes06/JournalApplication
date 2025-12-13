@@ -4,6 +4,7 @@ import com.deepu.entity.User;
 import com.deepu.service.UserDetailsServiceImpl;
 import com.deepu.service.UserService;
 import com.deepu.utils.jwtUtil;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @RequestMapping("/public")
+@Tag(name = " Public APIs")
 public class PublicController {
 
     @Autowired
@@ -53,7 +55,7 @@ public class PublicController {
         }catch (Exception e){
             log.error("exception occurred while creating authentication token", e);
             return new ResponseEntity<>("Incorrect username or password", HttpStatus.BAD_REQUEST);
-            
+
         }
 
     }

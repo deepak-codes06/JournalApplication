@@ -5,6 +5,7 @@ import com.deepu.entity.User;
 import com.deepu.service.JournalEntryService;
 import com.deepu.service.UserService;
 import com.fasterxml.jackson.databind.deser.std.CollectionDeserializer;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,6 +19,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/journal")
+@Tag(name = "Journal APIs")
 public class JournalEntryController {
 
     @Autowired

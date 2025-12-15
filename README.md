@@ -17,6 +17,8 @@ A Spring Boot-based journal application to create, manage, and analyze journal e
 - MongoDB
 - Redis
 - Maven
+- swagger
+- OAuth2 
 
 ## How to Run
 1. Clone the repository
